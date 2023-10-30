@@ -1,0 +1,276 @@
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    font-family: 'happy_times_at_the_ikob_newIt', serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.333rem;
+    line-height: 2rem;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover{
+    cursor: crosshair;
+    filter: opacity(.3);
+}
+
+h4{
+    font-family: monospace;
+    font-weight: normal;
+    white-space: nowrap;
+}
+
+.home-years{
+    font-size: 1rem;
+    margin: 0.4rem 40px 0 0;
+}
+
+.project-years{
+    font-size: 0.75rem;
+    margin: 1.333rem 0;
+}
+
+h3{
+    font-family: monospace;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    padding: 4px 8px;
+    border-radius: 30px;
+    white-space: nowrap;
+    margin: 0.75rem 8px 0 0;
+}
+
+h2{
+    font-family: monospace;
+    font-weight: normal;
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin:0;
+}
+
+#tags{
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.category-big{
+    font-size: 1rem;
+    padding: 6px 12px;
+    border-radius: 30px;
+}
+
+.year-big{
+    font-size: 1.333rem;
+}
+
+.category-circle{
+    display: inline-block;
+    padding: 7px;
+    border-radius: 30px;
+    margin: 0;
+    margin-left: 6px;
+    transform:translateY(3px);
+}
+
+.circle-container{
+    white-space: nowrap;
+}
+
+h1{
+    font-family: 'happy_times_at_the_ikob_newIt', serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.777rem;
+    line-height: 2.5rem;
+    margin:0;
+}
+
+.dataviz{
+    background-color: #FFC3BB;
+}
+
+.ixd{
+    background-color: #FFBBEC;
+}
+
+.vizid{
+    background-color: #BBFFD6;
+}
+
+.eddes{
+    background-color: #FEFFBB;
+}
+
+.phot{
+    background-color: #C1BBFF;
+}
+
+.game{
+    background-color: #BBDEFF;
+}
+
+.project-index{
+    padding-top:60px;
+}
+
+.index-home-project, .index-project{
+    margin: 0;
+}
+
+.index-home-project{
+    font-size: 1rem;
+}
+
+.index-project{
+    font-size: 0.75rem;
+    line-height: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 8px;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+.flex{
+    display: flex;
+}
+
+.row{
+    flex-direction: row;
+    align-items: flex-start; 
+}
+
+.column{
+    flex-direction: column;
+}
+
+.categories{
+    flex-wrap: wrap;
+    margin-bottom: 2.5rem;
+}
+
+.content-container{
+    display: flex;
+    margin: 0 90px;
+}
+
+#left-col-homepage{
+    width:44%;
+    padding: 60px 0;
+}
+
+#right-col-homepage{
+    width:56%;
+    height:100vh;    
+    position: sticky;
+    top: 0;
+    border-left: 2px dotted #000;
+    padding-left: 90px;
+}
+
+#left-col-project{
+    width:70%;
+    padding: 0 90px 40px 0;
+}
+
+#right-col-project{
+    width:30%;
+    height:100vh;    
+    position: sticky;
+    top: 0;
+    border-left: 2px dotted #000;
+    padding-left: 90px;
+}
+
+#about-me{
+    padding-top: 40px;
+}
+
+#other-projects{
+    padding:0;
+    margin:0;
+    margin-bottom:1rem;
+}
+
+#title-container{
+    position: sticky;
+    top: 0;
+    padding-top:40px;
+    padding-bottom: 1rem;
+    z-index: 3;
+    background-color: #f4f4f4;
+    align-items: flex-start;
+}
+
+#description-container{
+    position: sticky;
+    top: 100px;
+}
+
+#img-container{
+    position:relative;
+    z-index: 2;
+}
+
+#img-container img{
+    margin-bottom: 1rem;
+}
+
+
+.single-img{
+    width:100%;
+}
+
+.double-img{
+    justify-content: space-between;
+}
+
+.double-img img{
+    width:49%;
+}
+
+a.selected{
+    filter:opacity(0.3);
+    cursor: default;
+}
+
+#home-button{
+    position:fixed;
+    top: 70px;
+    left: 0;
+    font-family: monospace;
+    font-weight: normal;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-size: 1rem;
+    line-height: 1rem;
+    padding: 4px 12px;
+    border-radius: 30px;
+    border: 2px solid #000;
+    transform: rotate(90deg);
+}
+
+#home-button:hover{
+    background-color: #000;
+    color: #f4f4f4;
+}
+
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
