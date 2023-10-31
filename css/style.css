@@ -166,12 +166,19 @@ h1{
 
 .content-container{
     display: flex;
-    margin: 0 90px;
+    margin: 0;
+    margin-right: 90px;
+}
+
+.content-container-proj{
+    display: flex;
+    margin: 0;
+    margin-left: 120px;
 }
 
 #left-col-homepage{
     width:44%;
-    padding: 60px 0;
+    padding: 60px 90px;
 }
 
 #right-col-homepage{
@@ -184,17 +191,18 @@ h1{
 }
 
 #left-col-project{
-    width:70%;
-    padding: 0 90px 40px 0;
+    width:75%;
+    padding: 0 120px 40px 0;
 }
 
 #right-col-project{
-    width:30%;
+    background-color: #fff;
+    width:25%;
     height:100vh;    
     position: sticky;
     top: 0;
     border-left: 2px dotted #000;
-    padding-left: 90px;
+    padding: 0 20px;
 }
 
 #about-me{
@@ -268,6 +276,10 @@ a.selected{
 #home-button:hover{
     background-color: #000;
     color: #f4f4f4;
+}
+
+.cat-big-container h2{
+    margin-right:20px;
 }
 
 ::-webkit-scrollbar {
