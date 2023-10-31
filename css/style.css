@@ -3,28 +3,46 @@
 /* Foundations*/
 
 html {
-    overflow-y: scroll;
     overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 body{
     background-color: #f4f4f4;
-    margin: 0;
     padding: 0;
+    margin: 0;
+}
+
+.main{
+    display: flex;
+    margin: 0;
 }
 
 ::-webkit-scrollbar {
     width: 0;
-  }
+}
 
 /* Texts*/
 
-p{
+p, h1{
     font-family: 'happy_times_at_the_ikob_newIt', serif;
     font-weight: normal;
     font-style: normal;
-    font-size: 1.333rem;
-    line-height: 2rem;
+}
+
+h4, h3, h2{
+    font-family: monospace;
+    font-weight: normal;
+    white-space: nowrap;
+    margin:0;
+}
+
+h3, h2{
+    text-transform: uppercase;
+}
+
+h1{
+    margin:0;
 }
 
 a{
@@ -35,40 +53,6 @@ a{
 a:hover{
     cursor: crosshair;
     filter: opacity(.3);
-}
-
-h4{
-    font-family: monospace;
-    font-weight: normal;
-    white-space: nowrap;
-}
-
-h3{
-    font-family: monospace;
-    font-weight: normal;
-    text-transform: uppercase;
-    font-size: 0.75rem;
-    padding: 4px 8px;
-    border-radius: 30px;
-    white-space: nowrap;
-    margin: 0.75rem 8px 0 0;
-}
-
-h2{
-    font-family: monospace;
-    font-weight: normal;
-    text-transform: uppercase;
-    white-space: nowrap;
-    margin:0;
-}
-
-h1{
-    font-family: 'happy_times_at_the_ikob_newIt', serif;
-    font-weight: normal;
-    font-style: normal;
-    font-size: 1.777rem;
-    line-height: 2.5rem;
-    margin:0;
 }
 
 /* Colors*/
@@ -109,7 +93,7 @@ h1{
 
 .row{
     flex-direction: row;
-    align-items: flex-start; 
+    align-items: flex-start;
 }
 
 .column{
@@ -118,55 +102,61 @@ h1{
 
 /*_____________________________________________________ HOMEPAGE*/
 
-.content-container{
-    display: flex;
-    margin: 0;
-    margin-right: 90px;
-}
-
 /* ------------------------------------> HP Left column*/
 
-#left-col-homepage{
+#homepage-lt{
     width:44%;
     padding: 60px 90px;
 }
 
 /* Years*/
 
-.home-years{
+.hp-years{
     font-size: 1rem;
     margin: 0.4rem 40px 0 0;
 }
 
-/* Categories*/
-
-.categories{
-    flex-wrap: wrap;
-    margin-bottom: 2.5rem;
-}
-
 /* Projects*/
 
-.index-home-project{
+.hp-project-li{
     font-size: 1rem;
     margin: 0;
 }
 
+/* Categories*/
+
+.hp-categories{
+    flex-wrap: wrap;
+    margin-bottom: 2.5rem;
+}
+
+.hp-categories h3{
+    font-size: 0.75rem;
+    border-radius: 30px;
+    padding: 4px 8px;
+    margin: 0.75rem 8px 0 0;
+}
+
 /* ------------------------------------> HP Right column*/
 
-#right-col-homepage{
+#homepage-rt{
     width:56%;
-    height:100vh;    
+    height:100vh;
     position: sticky;
     top: 0;
     border-left: 2px dotted #000;
-    padding-left: 90px;
+    padding: 0 90px;
 }
 
 /* About me*/
 
 #about-me{
     padding-top: 40px;
+}
+
+#about-me p{
+    font-size: 1.333rem;
+    line-height: 2rem;    
 }
 
 /*_____________________________________________________ PROJECT PAGE*/
@@ -217,6 +207,12 @@ h1{
     align-items: flex-start;
 }
 
+#title-container h1{
+    font-size: 1.777rem;
+    line-height: 2.5rem;
+    margin:0;
+}
+
 /* Categories*/
 
 #tags{
@@ -245,6 +241,11 @@ h1{
 #description-container{
     position: sticky;
     top: 100px;
+}
+
+#description-container p{    
+    font-size: 1.333rem;
+    line-height: 2rem;  
 }
 
 /* Images*/
