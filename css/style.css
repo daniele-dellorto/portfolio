@@ -114,8 +114,10 @@ a:hover{
         flex-direction: column-reverse;
     }
 
+    /* ------------------------------------> HP mobile Left column*/
+
     #homepage-lt{
-        padding: 60px 20px;
+        padding: 20px;
     }
 
     #hp-list{    
@@ -124,22 +126,39 @@ a:hover{
 
     .hp-year-proj{
         flex-direction: column;
+        border-top: 2px dotted #000;
     }
 
     .hp-years{
         font-size: 1rem;
-        margin: 2rem 0 2.5rem 0;
+        margin: 1.5rem 0 3rem 0;
     }
 
     .year-arrow{
         display:none;
     }
 
+    .hp-project-li{
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    .hp-categories{
+        flex-wrap: wrap;
+        margin-bottom: 3rem;
+    }
+    
+    .hp-categories h3{
+        font-size: 0.8rem;
+        border-radius: 30px;
+        padding: 6px 12px;
+        margin: 0.8rem 8px 0 0;
+    }
+
+    /* ------------------------------------> HP mobile Right column*/
+
     #homepage-rt{
-        height: 50vh;
-        overflow: hidden;
         padding: 0 20px;
-        border-bottom: 2px dotted #000;
     }
     
     #about-me{
@@ -151,32 +170,6 @@ a:hover{
         font-size: 1.25rem;
         line-height: 1.8rem;    
     }
-
-    #read-more{
-        display: block;
-        position: absolute;
-        left: 50%;
-        top: 40vh;
-        transform: translate(-50%, 50%);
-        width: fit-content;
-        font-size: 1rem;
-        border-radius: 30px;
-        padding: 8px 16px;
-        background-color: #000;
-        color: #f4f4f4;
-        z-index: 3;
-    }
-
-    #gradient{
-        display: block;
-        position: absolute;
-        height: 40vh;
-        width: 100vw;
-        top: 10vh;
-        margin: 0 -20px;
-        background-image: linear-gradient(rgba(244,244,244,0), rgba(244,244,244,1));
-        z-index: 2;
-    }
     
 }
 
@@ -186,6 +179,8 @@ a:hover{
         flex-direction: row;
     }
 
+    /* ------------------------------------> HP tablet Left column*/
+
     #homepage-lt{
         width:40%;
         padding: 60px 60px 60px 40px;
@@ -193,19 +188,35 @@ a:hover{
 
     #hp-list{    
         max-width:fit-content;
+        border: none;
     }
 
     .hp-year-proj{
         flex-direction: row;
+        border: none;
     }
 
     .hp-years{
-        margin: 0.4rem 40px 0 0;
+        margin: 0.1rem 40px 0 0;
     }
 
     .year-arrow{
         display:inline;
     }
+
+    .hp-categories{
+        flex-wrap: wrap;
+        margin-bottom: 2.5rem;
+    }
+    
+    .hp-categories h3{
+        font-size: 0.75rem;
+        border-radius: 30px;
+        padding: 4px 8px;
+        margin: 0.75rem 8px 0 0;
+    }
+
+    /* ------------------------------------> HP tablet Right column*/
 
     #homepage-rt{
         width:60%;
@@ -224,53 +235,24 @@ a:hover{
         font-size: 1.333rem;
         line-height: 2rem;    
     }
-
-    #read-more, #gradient{
-        display: none;
-    }
     
 }
 
 @media screen and (min-width: 1025px) {
 
+    /* ------------------------------------> HP desktop Left column*/
+
     #homepage-lt{
         padding: 60px 80px 60px 40px;
     }
+
+    /* ------------------------------------> HP tablet Right column*/
 
     #homepage-rt{
         padding: 0 60px;
     }
     
 }
-
-/* ------------------------------------> HP Left column*/
-
-/* Years*/
-
-/* Projects*/
-
-.hp-project-li{
-    font-size: 1rem;
-    margin: 0;
-}
-
-/* Categories*/
-
-.hp-categories{
-    flex-wrap: wrap;
-    margin-bottom: 2.5rem;
-}
-
-.hp-categories h3{
-    font-size: 0.75rem;
-    border-radius: 30px;
-    padding: 4px 8px;
-    margin: 0.75rem 8px 0 0;
-}
-
-/* ------------------------------------> HP Right column*/
-
-/* About me*/
 
 /*_____________________________________________________ PROJECT PAGE*/
 
