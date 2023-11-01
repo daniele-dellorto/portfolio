@@ -2,9 +2,9 @@
 
 @font-face {
     font-family: 'happy_times_at_the_ikob_newIt';
-    src: url('happy-times-ng_italic_master_web.ttf') format('ttf'),
-         url('happy-times-ng_italic_master_web.woff2') format('woff2'),
-         url('happy-times-ng_italic_master_web.woff') format('woff');
+    src: url('assets/fonts/happy-times-ng_italic_master_web.ttf') format('ttf'),
+         url('assets/fonts/happy-times-ng_italic_master_web.woff2') format('woff2'),
+         url('assets/fonts/happy-times-ng_italic_master_web.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
