@@ -100,13 +100,23 @@ a:hover{
     flex-direction: column;
 }
 
+.center-x{
+    position:relative;
+    left:50%;
+    transform:translateX(-50%);
+}
+
 /*_____________________________________________________ HOMEPAGE*/
 
 /* ------------------------------------> HP Left column*/
 
 #homepage-lt{
-    width:44%;
-    padding: 60px 90px;
+    width:40%;
+    padding: 60px 80px 60px 40px;
+}
+
+#hp-list{    
+    max-width:fit-content;
 }
 
 /* Years*/
@@ -140,17 +150,18 @@ a:hover{
 /* ------------------------------------> HP Right column*/
 
 #homepage-rt{
-    width:56%;
+    width:60%;
     height:100vh;
     position: sticky;
     top: 0;
     border-left: 2px dotted #000;
-    padding: 0 90px;
+    padding: 0 60px;
 }
 
 /* About me*/
 
 #about-me{
+    max-width:900px;
     padding-top: 40px;
 }
 
