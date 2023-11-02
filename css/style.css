@@ -258,22 +258,51 @@ a:hover{
 
 @media screen {
 
+    /* ------------------------------------> PP Left column*/
+
+    /* ------------------------------------> PP Right column*/
+    
+    #projectpage-rt{
+        display: none;
+    }
+
 }
 
 @media screen and (min-width: 768px) {
+
+    /* ------------------------------------> PP Left column*/
+
+    #projectpage-lt{
+        width:75%;
+        padding: 0 80px 40px 80px;
+    }
+
+    /* ------------------------------------> PP Right column*/
+
+    #projectpage-rt{
+        display: block;
+        height: 100vh;
+        width:25%;
+        position: sticky;
+        top: 0;
+        background-color: #f4f4f4;
+    }
 
 }
 
 @media screen and (min-width: 1025px) {
 
+    /* ------------------------------------> PP Left column*/
+
+    #projectpage-lt{
+        padding: 0 140px 40px 140px;
+    }
+
+    /* ------------------------------------> PP Right column*/
+
 }
 
 /* ------------------------------------> PP Left column*/
-
-#projectpage-lt{
-    width:75%;
-    padding: 0 140px 40px 140px;
-}
 
 #home-button{
     position:fixed;
@@ -316,17 +345,14 @@ a:hover{
 
 /* Categories*/
 
-#tags{
+#project-intro{
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1.5rem;    
 }
 
-.cat-big-container h2{
+.project-category{
     margin-right:20px;
-}
-
-.category-big{
     font-size: 1rem;
     padding: 6px 12px;
     border-radius: 30px;
@@ -334,7 +360,7 @@ a:hover{
 
 /* Year*/
 
-.year-big{
+.project-year{
     font-size: 1.333rem;
 }
 
@@ -376,20 +402,12 @@ a:hover{
 
 /* ------------------------------------> PP Right column*/
 
+.pp-list{
+    padding: 60px 20px 0 20px;
+}
+
 .pp-year-proj{
     border-top: 2px dotted #000;
-}
-
-#projectpage-rt{
-    height: 100vh;
-    width:25%;
-    position: sticky;
-    top: 0;
-    background-color: #f4f4f4;
-}
-
-.project-index{
-    padding: 60px 20px 0 20px;
 }
 
 /* Title*/
@@ -402,9 +420,24 @@ a:hover{
 
 /* Years*/
 
-.project-years{
+.pp-years{
     font-size: 0.75rem;
     margin: 1rem 0 2rem 0;
+}
+
+/* Projects*/
+
+.pp-project-li{
+    margin: 0;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 8px;
+}
+
+a.selected{
+    filter:opacity(0.3);
+    cursor: default;
 }
 
 /* Categories*/
@@ -420,19 +453,4 @@ a:hover{
     margin: 0;
     margin-left: 6px;
     transform:translateY(3px);
-}
-
-/* Projects*/
-
-.index-project{
-    margin: 0;
-    font-size: 0.75rem;
-    line-height: 1rem;
-    margin-bottom: 1rem;
-    margin-right: 8px;
-}
-
-a.selected{
-    filter:opacity(0.3);
-    cursor: default;
 }
