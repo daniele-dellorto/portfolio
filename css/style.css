@@ -258,9 +258,13 @@ a:hover{
 
 @media screen {
 
-    /* ------------------------------------> PP Left column*/
+    /* ------------------------------------> PP mobile Left column*/ 
 
-    /* ------------------------------------> PP Right column*/
+    #projectpage-lt{
+        padding: 20px;
+    }
+
+    /* ------------------------------------> PP mobile Right column*/
     
     #projectpage-rt{
         display: none;
@@ -270,14 +274,14 @@ a:hover{
 
 @media screen and (min-width: 768px) {
 
-    /* ------------------------------------> PP Left column*/
+    /* ------------------------------------> PP tablet Left column*/
 
     #projectpage-lt{
         width:75%;
         padding: 0 80px 40px 80px;
     }
 
-    /* ------------------------------------> PP Right column*/
+    /* ------------------------------------> PP tablet Right column*/
 
     #projectpage-rt{
         display: block;
@@ -292,13 +296,13 @@ a:hover{
 
 @media screen and (min-width: 1025px) {
 
-    /* ------------------------------------> PP Left column*/
+    /* ------------------------------------> PP desktop Left column*/
 
     #projectpage-lt{
         padding: 0 140px 40px 140px;
     }
 
-    /* ------------------------------------> PP Right column*/
+    /* ------------------------------------> PP desktop Right column*/
 
 }
 
