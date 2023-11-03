@@ -302,19 +302,34 @@ a{
         padding: 70px 20px 20px 20px;
     }
 
-    #title-container{
+    #title-above{     
+        display: none;
+        Position: fixed;
+        top: 0;   
+        z-index: 3;
+        background-color: #e6e6e6;
+    }
+
+    #title-below{        
+        z-index: 3;
+        color: #000;
         position: relative;
         top: 0;
-        padding-top: 0;
+    }
+
+    .title-container{
         padding-bottom: 1.5rem;
-        background-color: #e6e6e6;
         align-items: flex-start;
     }
     
-    #title-container h1{
+    .title-container h1{
         font-size: 1.563rem;
         line-height: 2.2rem;
         margin: 0;
+    }
+
+    #pp-text-container{
+        position: relative;
     }
 
     #project-intro{
@@ -344,7 +359,6 @@ a{
     }
     
     #description-container{
-        position: relative;
         border-bottom: 2px dotted #000;
     }
     
@@ -407,15 +421,23 @@ a{
         padding: 0 80px 40px 80px;
     }
 
-    #title-container{
-        position: sticky;
+    #title-above{
+        display:block;
+        width: calc(75% - 120px);
+    }
+
+    .title-container{
         padding-top: 40px;
-        z-index: 3;
     }
     
-    #title-container h1{
+    .title-container h1{
         font-size: 1.777rem;
         line-height: 2.5rem;
+    }
+
+    #pp-text-container{
+        position: sticky;
+        top: 0;
     }
 
     #project-intro{
@@ -441,8 +463,6 @@ a{
     }
 
     #description-container{
-        position: sticky;
-        top: 110px;
         border: none;
     }
     
@@ -523,6 +543,11 @@ a{
 
     #projectpage-lt{
         padding: 0 140px 40px 140px;
+    }
+
+    #title-above{
+        display:block;
+        width: calc(75% - 210px);
     }
 
     /* ------------------------------------> PP desktop Right column*/
