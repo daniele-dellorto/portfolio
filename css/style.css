@@ -261,18 +261,20 @@ a:hover{
     #home-button{
         position:fixed;
         z-index: 4;
-        top: 20px;
-        left: 20px;
+        top: 15px;
+        width: calc(100vw - 40px);
         font-family: monospace;
         font-weight: normal;
         white-space: nowrap;
         text-transform: uppercase;
+        text-align: center;
         font-size: 1rem;
         line-height: 1rem;
-        padding: 8px 24px;
+        padding: 8px 0;
         border-radius: 40px;
         border: 2px solid #000;
-        background-color: #e6e6e6;
+        background-color: #000;
+        color: #e6e6e6;
     }
     
     #home-button:hover{
@@ -344,6 +346,27 @@ a:hover{
         font-size: 1.25rem;
         line-height: 1.8rem;  
     }
+    
+    #img-container{
+        position:relative;
+        z-index: 2;
+        margin-top: 2rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    #img-container img{
+        margin-bottom: 1rem;
+    }
+    
+    .single-img{
+        width:100%;
+    }
+    
+    .double-img{
+        width:100%;
+    }
 
     /* ------------------------------------> PP mobile Right column*/
     
@@ -359,6 +382,8 @@ a:hover{
         top: 70px;
         left: 0;
         padding: 4px 12px;
+        background-color: #e6e6e6;
+        color: #000;
         transform: rotate(90deg);
     }
 
@@ -420,6 +445,10 @@ a:hover{
         font-size: 1.333rem;
         line-height: 2rem;  
     }
+    
+    .double-img{
+        width:49%;
+    }
 
     /* ------------------------------------> PP tablet Right column*/
 
@@ -432,9 +461,58 @@ a:hover{
         background-color: #f4f4f4;
     }
 
+    .pp-list{
+        padding: 60px 20px 0 20px;
+    }
+    
+    .pp-year-proj{
+        border-top: 2px dotted #000;
+    }
+    
+    #other-projects{
+        padding:0;
+        margin:0;
+        margin-bottom:1rem;
+    }
+    
+    .pp-years{
+        font-size: 0.75rem;
+        margin: 1rem 0 2rem 0;
+    }
+    
+    .pp-project-li{
+        margin: 0;
+        font-size: 0.75rem;
+        line-height: 1rem;
+        margin-bottom: 1rem;
+        margin-right: 8px;
+    }
+    
+    a.selected{
+        filter:opacity(0.3);
+        cursor: default;
+    }
+    
+    .circle-container{
+        white-space: nowrap;
+    }
+    
+    .category-circle{
+        display: inline-block;
+        padding: 7px;
+        border-radius: 30px;
+        margin: 0;
+        margin-left: 6px;
+        transform:translateY(3px);
+    }
+
 }
 
 @media screen and (min-width: 1025px) {
+
+    #home-button{
+        left: 20px;
+    }
 
     /* ------------------------------------> PP desktop Left column*/
 
@@ -444,92 +522,4 @@ a:hover{
 
     /* ------------------------------------> PP desktop Right column*/
 
-}
-
-/* ------------------------------------> PP Left column*/
-
-/* Title*/
-
-/* Categories*/
-
-/* Year*/
-
-/* Description*/
-
-/* Images*/
-
-#img-container{
-    position:relative;
-    z-index: 2;
-    margin-top: 2rem;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-#img-container img{
-    margin-bottom: 1rem;
-}
-
-.single-img{
-    width:100%;
-}
-
-.double-img{
-    width:49%;
-}
-
-/* ------------------------------------> PP Right column*/
-
-.pp-list{
-    padding: 60px 20px 0 20px;
-}
-
-.pp-year-proj{
-    border-top: 2px dotted #000;
-}
-
-/* Title*/
-
-#other-projects{
-    padding:0;
-    margin:0;
-    margin-bottom:1rem;
-}
-
-/* Years*/
-
-.pp-years{
-    font-size: 0.75rem;
-    margin: 1rem 0 2rem 0;
-}
-
-/* Projects*/
-
-.pp-project-li{
-    margin: 0;
-    font-size: 0.75rem;
-    line-height: 1rem;
-    margin-bottom: 1rem;
-    margin-right: 8px;
-}
-
-a.selected{
-    filter:opacity(0.3);
-    cursor: default;
-}
-
-/* Categories*/
-
-.circle-container{
-    white-space: nowrap;
-}
-
-.category-circle{
-    display: inline-block;
-    padding: 7px;
-    border-radius: 30px;
-    margin: 0;
-    margin-left: 6px;
-    transform:translateY(3px);
 }
