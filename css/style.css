@@ -50,9 +50,13 @@ a{
     color: #000;
 }
 
-a:hover{
-    cursor: crosshair;
-    filter: opacity(.3);
+@media screen and (min-width: 768px) {
+
+    a:hover{
+        cursor: crosshair;
+        filter: opacity(.3);
+    }
+
 }
 
 /* Colors*/
@@ -275,8 +279,8 @@ a:hover{
         padding: 8px 0;
         border-radius: 40px;
         border: 2px solid #000;
-        background-color: #000;
-        color: #e6e6e6;
+        background-color: #e6e6e6;
+        color: #000;
     }
     
     #home-button:hover{
@@ -385,8 +389,6 @@ a:hover{
         left: 0;
         width: auto;
         padding: 4px 12px;
-        background-color: #e6e6e6;
-        color: #000;
         transform: rotate(90deg);
     }
 
