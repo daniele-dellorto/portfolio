@@ -260,8 +260,10 @@ a:hover{
 
     #home-button{
         position:fixed;
-        z-index: 4;
         top: 15px;
+        left:50%;
+        transform:translateX(-50%);
+        z-index: 4;
         width: calc(100vw - 40px);
         font-family: monospace;
         font-weight: normal;
@@ -381,6 +383,7 @@ a:hover{
     #home-button{
         top: 70px;
         left: 0;
+        width: auto;
         padding: 4px 12px;
         background-color: #e6e6e6;
         color: #000;
