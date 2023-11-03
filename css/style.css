@@ -182,12 +182,12 @@ a:hover{
     /* ------------------------------------> HP tablet Left column*/
 
     #homepage-lt{
-        width:40%;
+        width: 40%;
         padding: 60px 60px 60px 40px;
     }
 
     #hp-list{    
-        max-width:fit-content;
+        max-width: fit-content;
         border: none;
     }
 
@@ -201,7 +201,7 @@ a:hover{
     }
 
     .year-arrow{
-        display:inline;
+        display: inline;
     }
 
     .hp-categories{
@@ -219,8 +219,8 @@ a:hover{
     /* ------------------------------------> HP tablet Right column*/
 
     #homepage-rt{
-        width:60%;
-        height:100vh;
+        width: 60%;
+        height: 100vh;
         position: sticky;
         top: 0;
         border-left: 2px dotted #000;
@@ -258,10 +258,91 @@ a:hover{
 
 @media screen {
 
+    #home-button{
+        position:fixed;
+        z-index: 4;
+        top: 20px;
+        left: 20px;
+        font-family: monospace;
+        font-weight: normal;
+        white-space: nowrap;
+        text-transform: uppercase;
+        font-size: 1rem;
+        line-height: 1rem;
+        padding: 8px 24px;
+        border-radius: 40px;
+        border: 2px solid #000;
+        background-color: #e6e6e6;
+    }
+    
+    #home-button:hover{
+        background-color: #000;
+        color: #e6e6e6;
+    }
+
+    .show-desktop{
+        display: none;
+    }
+
+    .show-mobile{
+        display: inline;
+    }
+
     /* ------------------------------------> PP mobile Left column*/ 
 
     #projectpage-lt{
-        padding: 20px;
+        padding: 70px 20px 20px 20px;
+    }
+
+    #title-container{
+        position: relative;
+        top: 0;
+        padding-top: 0;
+        padding-bottom: 1.5rem;
+        background-color: #e6e6e6;
+        align-items: flex-start;
+    }
+    
+    #title-container h1{
+        font-size: 1.563rem;
+        line-height: 2.2rem;
+        margin: 0;
+    }
+
+    #project-intro{
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        padding-top: 1rem;
+        border-top: 2px dotted #000;
+        border-bottom: 2px dotted #000;
+        margin-bottom: .5rem;    
+    }
+
+    #pp-categories{
+        flex-wrap: wrap;
+    }
+
+    .project-category{
+        margin-right: 20px;
+        margin-bottom: 15px;
+        font-size: 1rem;
+        padding: 6px 12px;
+        border-radius: 30px;
+    }
+
+    .project-year{
+        font-size: 1.25rem;
+    }
+    
+    #description-container{
+        position: relative;
+        border-bottom: 2px dotted #000;
+    }
+    
+    #description-container p{    
+        font-size: 1.25rem;
+        line-height: 1.8rem;  
     }
 
     /* ------------------------------------> PP mobile Right column*/
@@ -274,6 +355,21 @@ a:hover{
 
 @media screen and (min-width: 768px) {
 
+    #home-button{
+        top: 70px;
+        left: 0;
+        padding: 4px 12px;
+        transform: rotate(90deg);
+    }
+
+    .show-desktop{
+        display: inline;
+    }
+
+    .show-mobile{
+        display: none;
+    }
+
     /* ------------------------------------> PP tablet Left column*/
 
     #projectpage-lt{
@@ -281,12 +377,56 @@ a:hover{
         padding: 0 80px 40px 80px;
     }
 
+    #title-container{
+        position: sticky;
+        padding-top: 40px;
+        z-index: 3;
+    }
+    
+    #title-container h1{
+        font-size: 1.777rem;
+        line-height: 2.5rem;
+    }
+
+    #project-intro{
+        padding: 0;
+        align-items: center;
+        border: none;
+    }
+
+    #pp-categories{
+        flex-wrap: nowrap;
+    }
+
+    .project-category{
+        margin-right: 20px;
+        margin-bottom: 0;
+        font-size: 1rem;
+        padding: 6px 12px;
+        border-radius: 30px;
+    }
+
+    .project-year{
+        font-size: 1.333rem;
+    }
+
+    #description-container{
+        position: sticky;
+        top: 110px;
+        border: none;
+    }
+    
+    #description-container p{    
+        font-size: 1.333rem;
+        line-height: 2rem;  
+    }
+
     /* ------------------------------------> PP tablet Right column*/
 
     #projectpage-rt{
         display: block;
         height: 100vh;
-        width:25%;
+        width: 25%;
         position: sticky;
         top: 0;
         background-color: #f4f4f4;
@@ -308,77 +448,13 @@ a:hover{
 
 /* ------------------------------------> PP Left column*/
 
-#home-button{
-    position:fixed;
-    top: 70px;
-    left: 0;
-    font-family: monospace;
-    font-weight: normal;
-    white-space: nowrap;
-    text-transform: uppercase;
-    font-size: 1rem;
-    line-height: 1rem;
-    padding: 4px 12px;
-    border-radius: 30px;
-    border: 2px solid #000;
-    transform: rotate(90deg);
-}
-
-#home-button:hover{
-    background-color: #000;
-    color: #e6e6e6;
-}
-
 /* Title*/
-
-#title-container{
-    position: sticky;
-    top: 0;
-    padding-top:40px;
-    padding-bottom: 1.5rem;
-    z-index: 3;
-    background-color: #e6e6e6;
-    align-items: flex-start;
-}
-
-#title-container h1{
-    font-size: 1.777rem;
-    line-height: 2.5rem;
-    margin:0;
-}
 
 /* Categories*/
 
-#project-intro{
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1.5rem;    
-}
-
-.project-category{
-    margin-right:20px;
-    font-size: 1rem;
-    padding: 6px 12px;
-    border-radius: 30px;
-}
-
 /* Year*/
 
-.project-year{
-    font-size: 1.333rem;
-}
-
 /* Description*/
-
-#description-container{
-    position: sticky;
-    top: 110px;
-}
-
-#description-container p{    
-    font-size: 1.333rem;
-    line-height: 2rem;  
-}
 
 /* Images*/
 
@@ -386,6 +462,9 @@ a:hover{
     position:relative;
     z-index: 2;
     margin-top: 2rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 #img-container img{
@@ -397,10 +476,6 @@ a:hover{
 }
 
 .double-img{
-    justify-content: space-between;
-}
-
-.double-img img{
     width:49%;
 }
 
