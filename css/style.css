@@ -387,6 +387,10 @@ a{
     .double-img{
         width:100%;
     }
+    
+    .triple-img{
+        width:100%;
+    }
 
     /* ------------------------------------> PP mobile Right column*/
     
@@ -473,6 +477,10 @@ a{
     
     .double-img{
         width:49%;
+    }
+    
+    .triple-img{
+        width:32%;
     }
 
     /* ------------------------------------> PP tablet Right column*/
