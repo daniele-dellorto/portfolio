@@ -365,6 +365,10 @@ a{
     #description-container p{    
         font-size: 1.25rem;
         line-height: 1.8rem;  
+    }    
+    
+    #description-container a{    
+        text-decoration: underline;  
     }
     
     #img-container{
